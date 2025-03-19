@@ -73,3 +73,5 @@ vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next' })
 vim.keymap.set('n', '<Leader>d', vim.diagnostic.open_float, { desc = 'Open float' })
 vim.keymap.set('n', '<Leader>q', vim.diagnostic.setloclist, { desc = 'setloclist' })
 
+-- Have easier insert -> normal mode switch
+vim.keymap.set('i', 'jk', '<Esc>', opts)
